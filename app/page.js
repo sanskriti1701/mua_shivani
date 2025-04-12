@@ -98,34 +98,30 @@ export default function Home() {
 
       <div className="text-center mt-8">
         <div className="text-center mt-8">
-          <div className="space-x-6">
-
-
-
-            {/* Instagram Link */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-8">
+            {/* Instagram CTA */}
+            
             <a
               href="https://www.instagram.com/makeup_shivanigupta"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-lg font-semibold text-pink-500 hover:text-pink-600 transition duration-300 transform hover:scale-105"
+              className="flex items-center gap-3 px-6 py-3 font-semibold transition duration-300 transform hover:scale-105 hover:shadow-lg 
+               bg-pink-500 text-white hover:bg-pink-600"
             >
-              <span className={`flex items-center justify-center space-x-2 ${isDarkMode ? 'text-white' : 'text-black'}`}>
-                <i className="fab fa-instagram text-xl"></i>
-                <span>Follow on Instagram</span>
-              </span>
-
+              <i className="fab fa-instagram text-2xl"></i>
+              <span>Follow on Instagram</span>
             </a>
-
-            {/* Phone Number Link */}
             <a
-              href="tel:+1234567890" // replace with the actual phone number
-              className="inline-block text-lg font-semibold text-pink-500 hover:text-pink-600 transition duration-300 transform hover:scale-105"
+              href="tel:+919340887306"
+              className={`flex items-center gap-3 px-6 py-3 font-semibold transition duration-300 transform hover:scale-105 hover:shadow-lg 
+               ${isDarkMode ? 'bg-white text-black hover:bg-gray-100' : 'bg-black text-white hover:bg-gray-800'}`}
             >
-              <span className="flex items-center justify-center space-x-2">
-                <i className="fas fa-phone-alt text-xl"></i>
-                <span>Call Us: +91 9340887306</span> {/* Replace with actual phone number */}
-              </span>
+              <i className="fas fa-phone-alt text-2xl"></i>
+              <span>Call Us: 9340887306</span>
             </a>
+
+            {/* Phone CTA */}
+            
           </div>
         </div>
 
